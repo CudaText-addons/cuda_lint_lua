@@ -1,0 +1,5 @@
+[info]
+title=Linter for Lua
+desc=Linter for CudaLint, adds support for Lua lexer
+type=cudatext-plugin
+subdir=cuda_lint_lua
