@@ -1,7 +1,10 @@
 from cuda_lint import Linter, util
 import os
 
-_exe = os.path.join(os.path.dirname(__file__), 'lua_bin', 'luac53')
+if os.name=='nt':
+    _exe = os.path.join(os.path.dirname(__file__), 'lua_bin', 'luac53')
+else:
+    _exe = 'luac'
 
 class Lua(Linter):
     """Provides an interface to luac -p."""
